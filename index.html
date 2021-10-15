@@ -46,4 +46,19 @@
 			window.onorientationchange = function() { document.body.scrollTop = 0; }
 		</script>
 	</body>
+<style>
+	@-webkit-keyframes twinkling { /*透明度由0到1*/
+		0% {
+			opacity: 0; /*透明度为0*/
+		}
+		100% {
+			opacity: 1; /*透明度为1*/
+		}
+	}
+
+	#blog-wink {
+		-webkit-animation: twinkling 3s infinite ease-in-out;
+		color: red;
+	}
+</style>
 </html>
